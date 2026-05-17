@@ -15,54 +15,27 @@
 
     <h1>Kontakt</h1>
 
-    <!-- FORM -->
-    <form action="https://formspree.io/f/DITT-ID"
-          method="POST">
+    <form action="https://formspree.io/f/xaqkwrkq" method="POST">
 
-        <div class="mb-3">
+  <label>Namn</label>
+  <input type="text"
+         name="name"
+         required>
 
-            <label class="form-label">
-                Namn
-            </label>
+  <label>Email</label>
+  <input type="email"
+         name="email"
+         required>
 
-            <input type="text"
-                   class="form-control"
-                   required>
+  <label>Meddelande</label>
+  <textarea name="message"
+            required></textarea>
 
-        </div>
+  <button type="submit">
+      Skicka
+  </button>
 
-        <div class="mb-3">
-
-            <label class="form-label">
-                Email
-            </label>
-
-            <input type="email"
-                   class="form-control"
-                   required>
-
-        </div>
-
-        <div class="mb-3">
-
-            <label class="form-label">
-                Meddelande
-            </label>
-
-            <textarea class="form-control"
-                      rows="5"
-                      required></textarea>
-
-        </div>
-
-        <button type="submit"
-                class="btn btn-primary">
-
-            Skicka
-
-        </button>
-
-    </form>
+</form>
 
 </div>
 
