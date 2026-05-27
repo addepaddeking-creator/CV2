@@ -1,16 +1,19 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    color: #222;
+    background-color: white;
+    color: black;
+    transition: 0.3s;
 }
-
+*{
+    transition: 0.3s ease;
+}
 /* HERO */
 .hero {
     min-height: 90vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(to right, #111, #333);
-    color: white;
+    background: linear-gradient(to right, #e9ecef, #ffffff);
+    color: black;
 }
 
 /* PROFILBILD */
@@ -29,17 +32,6 @@ body {
     transform: scale(1.03);
 }
 
-/* DARK MODE */
-.dark {
-    background-color: #111;
-    color: white;
-}
-
-.dark .card {
-    background-color: #222;
-    color: white;
-}
-
 /* RESPONSIV */
 @media (max-width: 768px) {
 
@@ -50,4 +42,25 @@ body {
     h1 {
         font-size: 2rem;
     }
+}
+.dark-mode .hero{
+    background: linear-gradient(to right, #111, #333);
+    color: white;
+}
+.dark-mode{
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode nav{
+    background-color: black !important;
+}
+
+.dark-mode .card{
+    background-color: #1e1e1e;
+    color: white;
+}
+
+.dark-mode a{
+    color: white;
 }

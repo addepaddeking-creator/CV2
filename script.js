@@ -1,0 +1,9 @@
+const darkModeBtn = document.getElementById("darkModeBtn");
+
+darkModeBtn.addEventListener("click", function(){
+
+    document.body.classList.toggle("dark-mode");
+
+});
+console.log("JavaScript fungerar");
+
